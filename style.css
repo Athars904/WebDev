@@ -1,0 +1,77 @@
+body
+{
+	background-color: grey;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.head
+{
+	color:red;
+}
+#main{
+	background-color: skyblue;
+}
+.hdr
+{
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 3px 3px 5px blue;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: grey;
+}
+.bdr
+{
+	border-width: 10px;
+	border-top: dashed green;
+	border-style: double;
+	border-color: red;
+	padding-left: 40px;
+	margin: 80px auto 50px;
+	box-shadow: 10px 10px 10px brown;
+
+}
+.main1
+{
+	color: white;
+	width: 400px;
+	height: 300px;
+	margin: 60px auto 50px;
+	padding: 40px 100px 45px 100px;
+	border-bottom-right-radius: 70px;
+	border-top-left-radius: 70px;
+	box-shadow: 10px 10px 10px black;
+	background-blend-mode: color-burn;
+	background-image:linear-gradient(yellow,brown), url(image.jpg);
+	background-size: cover;
+	max-width: 300px;
+	min-width: 30px;
+	text-decoration: underline;
+}
+.info
+{
+	width: 600px;
+	border: 2px solid red;
+ 	margin:0 auto 0;
+	background-blend-mode: screen;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(yellow,brown),url(download.jpg);
+}
+nav
+{
+	border:solid 4px;
+	background:linear-gradient (brown, blue);
+	text-transform: uppercase;
+	float:center;
+}
+nav div li
+{
+	display: inline-block;
+	list-style:none;
+	padding: 0 48px;
+}
+nav div li:hover
+{
+	color: red;
+}

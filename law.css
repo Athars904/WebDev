@@ -1,0 +1,107 @@
+header {
+  background-color: #171F54 ;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Adjust this to the height of your logo */
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: brown;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+.heading
+{
+  font-size: 40px;
+  text-decoration: underline;
+}
+.float {
+  background-image: url('justice.jpg');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px; /* Set the height of the container to the size of the image */
+  position: relative; /* Set the position of the container to relative */
+}
+
+.float h1 {
+  position: absolute; /* Set the position of the text to absolute */
+  top: 50%; /* Center the text vertically */
+  left: 50%; /* Center the text horizontally */
+  transform: translate(-50%, -50%); /* Move the text back up and left by 50% of its own size */
+  color: white; /* Set the text color to white */
+  font-size: 3rem; /* Set the font size */
+  text-align: center; /* Center the text horizontally */
+  text-shadow: 2px 2px 4px #000000; /* Add a drop shadow to the text */
+  animation: float-in 1s forwards; /* Add the animation */
+}
+@keyframes float-in {
+  from {
+    transform: translate(-50%, -100%); /* Move the text up */
+    opacity: 0; /* Set the opacity to 0 */
+  }
+  to {
+    transform: translate(-50%, -50%); /* Move the text down */
+    opacity: 1; /* Set the opacity to 1 */
+  }
+}
